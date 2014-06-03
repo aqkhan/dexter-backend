@@ -1,4 +1,4 @@
-WordPress starter-kit
+Kickstart WordPress Theme
 ===========
 
 ### Starter kit for WordPress themes.
@@ -21,3 +21,20 @@ WordPress starter-kit
 * Resize and PRINT images (Needs a page to print image on ) 
 * Pagination 
 * Change URL of the website easily after deploying on live server 
+===========
+
+### Coming Soon
+
+* Basic Bootstrap UI loaded
+* AJAX Based User Registration
+* AJAX Based User Login
+* AJAX Based Pagination
+* AJAX Based Search
+* Custom Post Types
+* Post Meta
+* Admin Panels and Pages
+===========
+
+### Requests / Issues
+
+Send your requests / issues at aqk.neo@gmail.com
