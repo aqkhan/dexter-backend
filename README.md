@@ -3,7 +3,7 @@ WordPress starter-kit
 
 ### Starter kit for WordPress themes.
 
-* Load Bootstrap (version 3.1.1 minified)
+* Bootstrap (version 3.1.1 minified) loaded
 * Custom CSS loaded the proper way 
 * Custom JS loaded the proper way 
 * jQuery loaded the proper way 
