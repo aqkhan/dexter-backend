@@ -31,6 +31,7 @@ Kickstart WordPress Theme
 * AJAX Based User Login
 * AJAX Based Pagination
 * AJAX Based Search
+* AJAX Based Commenting System
 * Custom Post Types
 * Post Meta
 * Admin Panels and Pages
