@@ -6,7 +6,9 @@ Kickstart WordPress Theme
 * Bootstrap (version 3.1.1 minified) loaded
 * Custom CSS loaded the proper way 
 * Custom JS loaded the proper way 
-* jQuery loaded the proper way 
+* jQuery loaded the proper way
+* Page titles loaded the proper way
+* Facebook og meta loaded the proper way 
 * Print Conditional Scripts (Bootstrap or Browser Compatibility scripts) 
 * Include Admin Panel or custom include files to your theme 
 * Disable / Enable Admin Bar 
@@ -21,7 +23,6 @@ Kickstart WordPress Theme
 * Resize and PRINT images (Needs a page to print image on ) 
 * Pagination 
 * Change URL of the website easily after deploying on live server 
-===========
 
 ### Coming Soon
 
@@ -33,7 +34,7 @@ Kickstart WordPress Theme
 * Custom Post Types
 * Post Meta
 * Admin Panels and Pages
-===========
+* Facebook SDK integration
 
 ### Requests / Issues
 
