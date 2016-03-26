@@ -3,10 +3,10 @@ Kickstart WordPress Theme
 
 ### Starter kit for WordPress themes.
 
-* Bootstrap (version 3.1.1 minified) loaded
+* Bootstrap (version 3.3.6 minified) loaded
 * Custom CSS loaded the proper way 
 * Custom JS loaded the proper way 
-* jQuery loaded the proper way
+* jQuery 1.12.2 loaded the proper way
 * Page titles loaded the proper way
 * Facebook og meta loaded the proper way 
 * Print Conditional Scripts (Bootstrap or Browser Compatibility scripts) 
