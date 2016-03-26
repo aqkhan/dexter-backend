@@ -3,7 +3,7 @@
  * WordPress Ninja by A Q Khan ( aqkhan@iintellect.co.uk )
  * Contains most of basic WP functions and some high level custom code shit.
  * Version 0.1
- * Last Updated: June 3, 2014
+ * Last Updated: March 26, 2016
  */
 
 //== BASIC LEVEL SHIT ==//
@@ -32,7 +32,7 @@ add_action('wp_enqueue_scripts', 'load_scripts', 12);
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 10);
 function my_jquery_enqueue() {
     wp_deregister_script('jquery');
-    wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-1.10.2.js', false, null);
+    wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-1.12.2.min.js', false, null);
     wp_enqueue_script('jquery');
     //-- Load Bootstrap (version 3.1.1 minified)--//
 }
