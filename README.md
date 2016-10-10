@@ -41,16 +41,7 @@ Dexter back-end
 
 ### Coming Soon
 
-* Basic Bootstrap UI loaded
-* AJAX Based User Registration
-* AJAX Based User Login
-* AJAX Based Pagination
-* AJAX Based Search
-* AJAX Based Comments System
-* Custom Post Types
-* Post Meta
-* Admin Panels and Pages
-* Facebook SDK integration
+* New features here
 
 ### Requests / Issues
 
