@@ -1,5 +1,20 @@
-Kickstart WordPress Theme
-===========
+Dexter back-end
+==============
+
+### Project uploader 11/10/2016
+
+- [x] Projects Front-end
+- [x] Projects Storage
+- [ ] Update fields according to excel sheet
+- [ ] Google autofill for project locations on front-end
+- [ ] Google Geo loaction for project locations on front-end
+- [ ] UploadCare on front-end for project sceenshot and logo
+- [ ] Server deployment
+- [ ] CPT UI & ACF installation
+- [ ] Create CPT and respective ACF fields
+- [ ] Convert project tags in categories / taxonomies 
+
+* Fields are column names here: https://docs.google.com/a/iintellect.co.uk/spreadsheets/d/1DnupbsiUWbIRZ41EWM1dFb2yjKOb6uGlcAAs4wzGe7I/edit?usp=sharing
 
 ### Starter kit for WordPress themes.
 
