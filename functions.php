@@ -92,6 +92,15 @@ function excerpt($num) {
     echo $excerpt;
 }
 
+//-- Load WordPress in any PHP file --//
+function loadWordPress() {
+    $parse_uri = explode( 'wp-content', $_SERVER['SCRIPT_FILENAME'] );
+    if (strpos($parse_uri[0], 'index') !== -1) {
+        $parse_uri = explode('index.php', $parse_uri[0]);
+    }
+    require_once( $parse_uri[0] . 'wp-load.php' );
+}
+
 //-- AJAX Sample function and hook below --//
 function name_of_function() {
     //-- Do something here
