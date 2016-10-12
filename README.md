@@ -6,8 +6,8 @@ Dexter back-end
 - [x] Projects Front-end
 - [x] Projects Storage
 - [ ] Update fields according to excel sheet
-- [ ] Google autofill for project locations on front-end
-- [ ] UploadCare on front-end for project sceenshot and logo
+- [x] Google autofill for project locations on front-end
+- [x] UploadCare on front-end for project sceenshot and logo
 - [ ] Server deployment
 - [ ] CPT UI & ACF installation
 - [ ] Create CPT and respective ACF fields
