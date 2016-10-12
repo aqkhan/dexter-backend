@@ -42,15 +42,22 @@ get_header();
                             <span class="help-block">Nature of project / business / company</span>
                         </div>
                     </div>
+
                     <!-- Google API-->
                      <div class="form-group">
                         <label class="col-md-4 control-label" for="pLocation">Project Location</label>
                         <div class="col-md-8">
                                 <input id="autocomplete"  name="pLocation" type="text" placeholder="" class="form-control input-md" onFocus="geolocate()" >
-                           
+                        </div>
+                     </div>
+
+                    <!-- Project Rating-->
+                     <div class="form-group">
+                        <label class="col-md-4 control-label" for="pRating">Project Rating</label>
+                        <div class="col-md-8">
+                                <input id="pRating"  name="pRating" type="text" placeholder="" class="form-control input-md">
                         </div>
                     </div>
-
 
                     <!-- Multiple Checkboxes -->
                     <div class="form-group">
@@ -84,6 +91,29 @@ get_header();
                             <textarea class="form-control" id="textarea" name="pDescription">2 - 3 small paragraphs about the project. Can be about what we do or what the client was about.</textarea>
                         </div>
                     </div>
+                     <!-- Clent Name-->
+                     <div class="form-group">
+                        <label class="col-md-4 control-label" for="cName">Client Name</label>
+                        <div class="col-md-8">
+                                <input id="cName"  name="cName" type="text" placeholder="" class="form-control input-md">
+                        </div>
+                    </div>
+
+                    <!-- Project FeedBack-->
+                     <div class="form-group">
+                        <label class="col-md-4 control-label" for="pFeedback">Project FeedBack</label>
+                        <div class="col-md-8">
+                                <input id="pFeedback"  name="pFeedback" type="text" placeholder="" class="form-control input-md">
+                        </div>
+                    </div>
+
+                     <!-- Services We Provide-->
+                     <div class="form-group">
+                        <label class="col-md-4 control-label" for="services">Services We Provided</label>
+                        <div class="col-md-8">
+                                <input id="services"  name="services" type="text" placeholder="" class="form-control input-md">
+                        </div>
+                    </div>    
 
 
                     <!-- File Button -->

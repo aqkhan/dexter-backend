@@ -23,7 +23,12 @@ if (!is_wp_error($p)) {
     update_post_meta($p, 'pTags', $tags);
     update_post_meta($p, 'pThumb', $_POST['pThumb']);
     update_post_meta($p, 'pLogo', $_POST['pLogo']);
-
+    update_post_meta($p, 'cName', $_POST['cName']);
+    update_post_meta($p, 'pRating', $_POST['pRating']);
+    update_post_meta($p, 'pFeedback', $_POST['pFeedback']);
+    update_post_meta($p, 'services', $_POST['services']);
+    update_post_meta($p, 'pLocation', $_POST['pLocation']);
+    update_post_meta($p, 'cName', $_POST['cName']);
 }
 else {
     wp_die($p->get_error_message());

@@ -13,7 +13,7 @@ $redirects = array(
 if (isset($_POST['aqk-action']) && !empty($_POST['aqk-action'])) {
     $red = $_POST['aqk-action'];
     unset($_POST['aqk-action']);
-    if ($_POST['aqk-action'] == 'pUpload') {
+    if ($red == 'pUploader') {
         require_once ('includes/project-uploader-storage.php');
     }
     wp_redirect(home_url() . $redirects[$red]);

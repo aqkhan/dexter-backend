@@ -17,7 +17,7 @@
         autocomplete.addListener('place_changed', fillInAddress);
       }
 
-      /*function fillInAddress() {
+      function fillInAddress() {
         var place = autocomplete.getPlace();
 
         for (var component in componentForm) {
@@ -31,7 +31,7 @@
             document.getElementById(addressType).value = val;
           }
         }
-      }*/
+      }
       function geolocate() {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
