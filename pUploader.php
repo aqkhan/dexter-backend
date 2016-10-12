@@ -42,6 +42,14 @@ get_header();
                             <span class="help-block">Nature of project / business / company</span>
                         </div>
                     </div>
+                    <!-- Google API-->
+                     <div class="form-group">
+                        <label class="col-md-4 control-label" for="pLocation">Project Location</label>
+                        <div class="col-md-8">
+                                <input id="autocomplete"  name="pLocation" type="text" placeholder="" class="form-control input-md" onFocus="geolocate()" >
+                           
+                        </div>
+                    </div>
 
 
                     <!-- Multiple Checkboxes -->
@@ -106,7 +114,9 @@ get_header();
             </form>
         </div>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwcpA0J1gspv1tvG2Oi60ZkuQKvyd5Lq8&libraries=places&callback=initAutocomplete" async defer></script>
 </body>
+
 <script type="text/javascript">
     (function($){
         $('input').each(function(){
