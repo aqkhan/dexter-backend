@@ -96,19 +96,32 @@ function excerpt($num) {
 
 //-- Load WordPress in any PHP file --//
 function loadWordPress() {
-    $parse_uri = explode( 'wp-content', $_SERVER['SCRIPT_FILENAME'] );
+    if (strpos($_SERVER['SCRIPT_FILENAME'], 'wp-admin') == -1) {
+        $parse_uri = explode( 'wp-content', $_SERVER['SCRIPT_FILENAME'] );
+    }
+    else {
+        $parse_uri = explode( 'wp-admin', $_SERVER['SCRIPT_FILENAME'] );
+    }
     if (strpos($parse_uri[0], 'index') !== -1) {
         $parse_uri = explode('index.php', $parse_uri[0]);
     }
     require_once( $parse_uri[0] . 'wp-load.php' );
 }
 
+//-- Load Project Specific functions here --//
+require_once('includes/dexter-funcs.php');
+
 //-- AJAX Sample function and hook below --//
-function name_of_function() {
-    //-- Do something here
+function checkProjectLinkAJAX() {
+    if (isset($_REQUEST['link']) && !empty($_REQUEST['link'])) {
+        $link = $_REQUEST['link'];
+        $r = checkExistingProjectLink($link);
+        echo ($r == true) ? 'exists' : 'new';
+    }
+    wp_die();
 }
-//add_action('wp_ajax_name_of_function', 'name_of_function');
-//add_action('wp_ajax_nopriv_name_of_function', 'name_of_function');
+add_action('wp_ajax_checkProjectLinkAJAX', 'checkProjectLinkAJAX');
+add_action('wp_ajax_nopriv_checkProjectLinkAJAX', 'checkProjectLinkAJAX');
 
 // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\
 

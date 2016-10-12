@@ -8,9 +8,13 @@ Dexter back-end
 - [x] Update fields according to excel sheet
 - [x] Google autofill for project locations on front-end
 - [x] UploadCare on front-end for project sceenshot and logo
+- [x] Projects record list
+- [x] Put a check on existing project link field
+- [x] Prevent project record duplication
 - [ ] Server deployment
 - [x] CPT UI & ACF installation
 - [x] Create CPT and respective ACF fields
+- [ ] Convert Projects record list in JS tables
 - [ ] Convert project tags in categories / taxonomies 
 
 * Fields are column names here: https://docs.google.com/a/iintellect.co.uk/spreadsheets/d/1DnupbsiUWbIRZ41EWM1dFb2yjKOb6uGlcAAs4wzGe7I/edit?usp=sharing
