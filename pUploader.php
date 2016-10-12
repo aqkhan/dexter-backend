@@ -149,7 +149,9 @@ get_header();
     <script type="text/javascript">
         (function($){
             $('input').each(function(){
-                $(this).attr('required', true);
+                if ($(this).attr('type') !== 'checkbox') {
+                    $(this).attr('required', true);
+                }
             });
             $('textarea').focus(function(){
                 $(this).text('');
