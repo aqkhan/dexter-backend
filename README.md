@@ -5,12 +5,12 @@ Dexter back-end
 
 - [x] Projects Front-end
 - [x] Projects Storage
-- [ ] Update fields according to excel sheet
+- [x] Update fields according to excel sheet
 - [x] Google autofill for project locations on front-end
 - [x] UploadCare on front-end for project sceenshot and logo
 - [ ] Server deployment
-- [ ] CPT UI & ACF installation
-- [ ] Create CPT and respective ACF fields
+- [x] CPT UI & ACF installation
+- [x] Create CPT and respective ACF fields
 - [ ] Convert project tags in categories / taxonomies 
 
 * Fields are column names here: https://docs.google.com/a/iintellect.co.uk/spreadsheets/d/1DnupbsiUWbIRZ41EWM1dFb2yjKOb6uGlcAAs4wzGe7I/edit?usp=sharing
