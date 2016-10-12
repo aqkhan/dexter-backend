@@ -90,7 +90,7 @@ get_header();
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="pThumb">Thumbnail (Square)</label>
                         <div class="col-md-4">
-                            <input id="pThumb" name="pThumb" class="input-file" type="file">
+                            <input type="hidden" role="uploadcare-uploader" data-images-only data-crop="free" name="pThumb" />
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@ get_header();
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="pLogo">Project Logo</label>
                         <div class="col-md-4">
-                            <input id="pLogo" name="pLogo" class="input-file" type="file">
+                            <input type="hidden" role="uploadcare-uploader" data-public-key="be48fe89f3beb6acc42e" name="pLogo" />
                         </div>
                     </div>
 
@@ -114,22 +114,32 @@ get_header();
             </form>
         </div>
     </div>
+    <!-- Google maps start here -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwcpA0J1gspv1tvG2Oi60ZkuQKvyd5Lq8&libraries=places&callback=initAutocomplete" async defer></script>
-</body>
+    <script type="text/javascript">
+        (function($){
+            $('input').each(function(){
+                $(this).attr('required', true);
+            });
+            $('textarea').focus(function(){
+                $(this).text('');
+            });
+            // Website Preview
+            $('#newTab').click(function(){
+                window.open($('#pLink').val());
+            });
+        })(jQuery);
+    </script>
+    <!-- Google maps end here -->
 
-<script type="text/javascript">
-    (function($){
-        $('input').each(function(){
-            $(this).attr('required', true);
-        });
-        $('textarea').focus(function(){
-            $(this).text('');
-        });
-        // Website Preview
-        $('#newTab').click(function(){
-            window.open($('#pLink').val());
-        });
-    })(jQuery);
-</script>
+    <!-- Uploadcare scripts start here -->
+    <script>
+        UPLOADCARE_LOCALE = "en";
+        UPLOADCARE_TABS = "file url facebook gdrive dropbox instagram box";
+        UPLOADCARE_PUBLIC_KEY = "1ee8444993195fd733af";
+    </script>
+    <script charset="utf-8" src="//ucarecdn.com/widget/2.10.0/uploadcare/uploadcare.full.min.js"></script>
+    <!-- Uploadcare scripts start here -->
+</body>
 <?php
 get_footer();
