@@ -98,7 +98,7 @@ get_header();
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="pLogo">Project Logo</label>
                         <div class="col-md-4">
-                            <input type="hidden" role="uploadcare-uploader" data-public-key="be48fe89f3beb6acc42e" name="pLogo" />
+                            <input type="hidden" role="uploadcare-uploader" data-public-key="be48fe89f3beb6acc42e" name="pLogo" data-crop="free" data-images-only />
                         </div>
                     </div>
 
