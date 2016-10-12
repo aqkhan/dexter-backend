@@ -96,15 +96,19 @@ function excerpt($num) {
 
 //-- Load WordPress in any PHP file --//
 function loadWordPress() {
-    if (strpos($_SERVER['SCRIPT_FILENAME'], 'wp-admin') == -1) {
+    if (strpos($_SERVER['SCRIPT_FILENAME'], 'wp-content') !== -1) {
         $parse_uri = explode( 'wp-content', $_SERVER['SCRIPT_FILENAME'] );
     }
-    else {
+    if (strpos($_SERVER['SCRIPT_FILENAME'], 'wp-admin') !== -1) {
         $parse_uri = explode( 'wp-admin', $_SERVER['SCRIPT_FILENAME'] );
+    }
+    if (strpos($_SERVER['SCRIPT_FILENAME'], 'wp-login') !== -1) {
+        $parse_uri = explode( 'wp-login.php', $_SERVER['SCRIPT_FILENAME'] );
     }
     if (strpos($parse_uri[0], 'index') !== -1) {
         $parse_uri = explode('index.php', $parse_uri[0]);
     }
+    
     require_once( $parse_uri[0] . 'wp-load.php' );
 }
 
